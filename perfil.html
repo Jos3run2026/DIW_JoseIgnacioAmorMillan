@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Soundwave</title>
+    <link href="css/miestilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header class="menu">
+        <nav>
+            <ul class="lista-horizontal">
+                <li class="logo">
+                    <a href="index.html">SOUNDWAVE</a>
+                </li>
+
+                <li><a href="index.html" class="enlace-menu">Inicio</a></li>
+                <li><a href="#Explorar" class="enlace-menu">Explorar</a></li>
+                <li><a href="#Biblioteca" class="enlace-menu">Biblioteca</a></li>
+                <li><a href="perfil.html" class="enlace-menu">Perfil</a></li>
+                <li>
+                    <button id="btnTema" class="btn-tema" type="button">
+                        Modo oscuro
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO DEL PERFIL -->
+    <main class="contenedor-perfil">
+
+        <section class="tarjeta-perfil">
+
+            <h1>Bienvenido a Soundwave</h1>
+
+            <p class="descripcion">
+                Inicia sesión o crea una cuenta para disfrutar de tu música favorita.
+            </p>
+
+            <!-- BOTONES PARA CAMBIAR DE FORMULARIO -->
+            <div class="opciones-perfil">
+
+                <button type="button" id="btnLogin" class="activo"
+                    onclick="mostrarLogin()">
+                    Iniciar sesión
+                </button>
+
+                <button type="button" id="btnRegistro"
+                    onclick="mostrarRegistro()">
+                    Registrarse
+                </button>
+
+            </div>
+
+            <!-- FORMULARIO DE INICIO DE SESIÓN -->
+            <form id="formLogin">
+
+                <h2>Iniciar sesión</h2>
+
+                <div class="campo-formulario">
+                    <label for="emailLogin">Correo electrónico</label>
+
+                    <input type="email" id="emailLogin"
+                        placeholder="Introduce tu correo electrónico" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="passwordLogin">Contraseña</label>
+
+                    <input type="password" id="passwordLogin"
+                        placeholder="Introduce tu contraseña" required>
+                </div>
+
+                <button type="submit" class="btn-perfil">
+                    Entrar
+                </button>
+
+            </form>
+
+            <!-- FORMULARIO DE REGISTRO -->
+            <form id="formRegistro" style="display: none;">
+
+                <h2>Crear una cuenta</h2>
+
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+
+                    <input type="text" id="nombre"
+                        placeholder="Introduce tu nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="emailRegistro">Correo electrónico</label>
+
+                    <input type="email" id="emailRegistro"
+                        placeholder="Introduce tu correo electrónico" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="passwordRegistro">Contraseña</label>
+
+                    <input type="password" id="passwordRegistro"
+                        placeholder="Crea una contraseña" required minlength="6">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="repassword">Repetir contraseña</label>
+
+                    <input type="password" id="repassword"
+                        placeholder="Repite tu contraseña" required minlength="6">
+                </div>
+
+                <button type="submit" class="btn-perfil">
+                    Crear cuenta
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+<script src="js/menu.js"></script>
+<script src="js/perfil.js"></script>
+<script src="js/modoOscuro.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Inicio</title>
+    <link href="css/miestilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="menu">
+        <nav>
+            <ul class="lista-horizontal">
+                <li class="logo"><a href="index.html">SOUNDWAVE</a></li>
+                <li><a href="index.html" class="enlace-menu">Inicio</a></li>
+                <li><a href="#Explorar" class="enlace-menu">Explorar</a></li>
+                <li><a href="#Biblioteca" class="enlace-menu">Biblioteca</a></li>
+                <li><a href="perfil.html" class="enlace-menu">Perfil</a></li>
+                <li>
+                    <button id="btnTema" class="btn-tema" type="button">
+                        Modo oscuro
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+
+        <section class="Pagina-Inicio">
+
+            <br><br><br><br>
+
+            <h1 style="color: #6C63FF; font-size: 32px;">
+                <strong>Bienvenido a Soundwave</strong>
+            </h1>
+
+            <br><br>
+
+            <p style="color: #667085">
+                Descubre nueva música y encuentra tus próximas canciones favoritas
+            </p>
+
+            <br><br>
+
+            <button type="button" class="btn btn-primary">
+                Explorar música
+            </button>
+
+            <br><br><br><br>
+
+            <div class="cabecera-recomendados">
+                <h2>Recomendado para ti</h2>
+                <a href="#" class="ver-todo">Ver todo →</a>
+            </div>
+
+            <br><br>
+
+            <!-- Álbumes recomendados -->
+            <article class="imagenes">
+
+                <div class="tarjeta-album">
+                    <img src="imagenes/images.png" alt="Album de Pink Floyd">
+
+                    <div class="info-album">
+                        <h3>The dark side of the moon</h3>
+                        <p>Pink Floyd</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-album">
+                    <img src="imagenes/images.jpg" alt="Album de AC/DC">
+
+                    <div class="info-album">
+                        <h3>Highway to Hell</h3>
+                        <p>AC/DC</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-album">
+                    <img src="imagenes/images3.jpg" alt="Album de Kendrick Lamar">
+
+                    <div class="info-album">
+                        <h3>DAMN</h3>
+                        <p>Kendrick Lamar</p>
+                    </div>
+                </div>
+
+            </article>
+
+            <br><br><br><br>
+
+            <!-- Tus playlist -->
+            <h2 style="font-size: 1.5rem">
+                <strong>Tus playlist</strong>
+            </h2>
+
+            <br>
+
+            <article class="imagenes-playlist">
+
+                <div class="tarjeta-playlist">
+                    <img src="imagenes/gym.jpg" alt="Playlist de gimnasio" width="200" height="200">
+                    <div class="info-playlist">
+                        <h3>Gym</h3>
+                    </div>
+                </div>
+
+                <div class="tarjeta-playlist">
+                    <img src="imagenes/rock.jpg" alt="Playlist de rock" width="200" height="200">
+                    <div class="info-playlist">
+                        <h3>Rock</h3>
+                    </div>
+                </div>
+
+                <div class="tarjeta-playlist">
+                    <img src="imagenes/corazon.png" alt="Playlist de favoritos" width="200" height="200">
+                    <div class="info-playlist">
+                        <h3>Favoritos</h3>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+<script src="js/menu.js"></script>
+<script src="js/modoOscuro.js"></script>
+</body>
+</html>
